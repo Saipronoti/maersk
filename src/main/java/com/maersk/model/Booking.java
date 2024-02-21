@@ -15,4 +15,44 @@ public class Booking {
     String origin;
     String destination;
     String quantity;
+
+    public String getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(String bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public int getContainerSize() {
+        return containerSize;
+    }
+
+    public void setContainerSize(int containerSize) {
+        this.containerSize = containerSize;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
 }
