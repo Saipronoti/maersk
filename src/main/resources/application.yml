@@ -1,5 +1,5 @@
 spring:
   data:
-    mongo:
+    mongodb:
       uri : mongodb+srv://admin:admin@atlascluster.rk9sz12.mongodb.net/?retryWrites=true&w=majority
       database: Booking
