@@ -10,7 +10,8 @@ public class Booking {
     private String bookingId;
     int containerSize;
     enum containerType{
-
+       DRY,
+        REEFER
     }
     String origin;
     String destination;
