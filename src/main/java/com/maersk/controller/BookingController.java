@@ -23,7 +23,7 @@ public class BookingController {
         return service.getAllBookings();
     }
 
-    @GetMapping("/{taskId}")
+    @GetMapping("/{bookingId}")
     public Booking getBooking(@PathVariable String bookingId){
         return service.getBookingByBookingId(bookingId);
     }
