@@ -3,6 +3,7 @@ package com.maersk.controller;
 import com.maersk.dto.BookingRequest;
 import com.maersk.model.Booking;
 import com.maersk.service.BookingService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,7 @@ public class BookingController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping("/createBooking")
-   public ResponseEntity<Booking> createBooking(@RequestBody BookingRequest bookingRequest){
+   public ResponseEntity<Booking> createBooking(@RequestBody @Valid BookingRequest bookingRequest){
         return new ResponseEntity<>(service.saveBooking(bookingRequest),HttpStatus.CREATED);
     }
 
